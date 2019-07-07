@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Selenium_Automation]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="scadfc"/>
+  <test thread-count="5" name="Admin(failed)">
+    <classes>
+      <class name="admin.Login">
+        <methods>
+          <include name="afterTest"/>
+          <include name="searchFunctionality"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="cartverification"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- admin.Login -->
+      <class name="admin.Dashboard">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- admin.Dashboard -->
+    </classes>
+  </test> <!-- Admin(failed) -->
+</suite> <!-- Failed suite [Selenium_Automation] -->

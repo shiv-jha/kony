@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Selenium_Automation]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="http://demo.opencart.com"/>
+  <test name="Admin(failed)">
+    <groups>
+      <run>
+        <include name="init"/>
+        <include name="smoke"/>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="admin.Login">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="cartverification"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- admin.Login -->
+    </classes>
+  </test> <!-- Admin(failed) -->
+</suite> <!-- Failed suite [Selenium_Automation] -->
