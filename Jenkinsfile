@@ -6,5 +6,13 @@ node {
    stage('print') {
      echo 'hello'
    }
+   
+    stages {
+        stage('build') {
+            steps {
+                sh 'python --version'
+            }
+        }
+    }
   
 }
